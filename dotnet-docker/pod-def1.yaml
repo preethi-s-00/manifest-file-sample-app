@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mygapp-pod2
+  labels:
+    app: mygapp2
+    type: backgend2
+spec:
+  containers:
+    - name: mycontainer
+      image: dot-doc-v3
+      imagePullPolicy: IfNotPresent
+      ports: 
+         - containerPort: 5001
